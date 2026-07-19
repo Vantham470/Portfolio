@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thieng Vanntham — Aspiring Backend Developer</title>
+<meta name="description" content="Portfolio of Thieng Vanntham — Software Development student passionate about backend engineering with Python, Django, and databases." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img src="images/avatar.jpg" alt="Thieng Vanntham" class="avatar"
+           onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar avatar-fallback',textContent:'TV'}))" />
+      <span class="status-dot" title="Available for work"></span>
+    </div>
+
+    <h1 class="name">Thieng Vanntham</h1>
+    <p class="title"><span class="accent">&lt;</span> Aspiring Backend Developer <span class="accent">/&gt;</span></p>
+    <p class="intro">
+      Software Development student passionate about backend development, Python, Django,
+      and building scalable systems. I love turning ideas into clean, reliable APIs.
+    </p>
+
+    <nav class="nav">
+      <a href="#about" class="nav-link active"><i class="fa-solid fa-user"></i><span>About</span></a>
+      <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+      <a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i><span>Projects</span></a>
+      <a href="#resume" class="nav-link"><i class="fa-solid fa-file-lines"></i><span>Resume</span></a>
+      <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="socials">
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="mailto:hello@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <a href="files/resume.pdf" download class="btn btn-primary sidebar-cta">
+      <i class="fa-solid fa-download"></i> Download CV
+    </a>
+  </div>
+</aside>
+
+<main class="main">
+
+  <!-- ABOUT / HERO -->
+  <section id="about" class="section hero">
+    <div class="hero-bg"></div>
+    <div class="container reveal">
+      <p class="eyebrow">Hello, world 👋</p>
+      <h2 class="hero-title">
+        I'm <span class="grad">Thieng Vanntham</span><br />
+        <span class="typed-wrap">
+          <span id="typed"></span><span class="caret">|</span>
+        </span>
+      </h2>
+      <p class="lead">
+        A software development student focused on building solid backends —
+        clean APIs, sensible databases, and code that other developers actually enjoy reading.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span class="num" data-count="15">0</span><span class="lbl">Projects Built</span></div>
+        <div class="stat"><span class="num" data-count="8">0</span><span class="lbl">Technologies</span></div>
+        <div class="stat"><span class="num" data-count="2">0</span><span class="lbl">Years Learning</span></div>
+        <div class="stat"><span class="num" data-count="100">0</span><span class="lbl">% Curiosity</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container reveal">
+      <p class="eyebrow">// Toolbox</p>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-sub">Backend-first, but comfortable across the stack.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-brands fa-python"></i><span>Python</span><em>90%</em></div>
+          <div class="bar"><i style="--w:90%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-solid fa-leaf"></i><span>Django</span><em>85%</em></div>
+          <div class="bar"><i style="--w:85%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-solid fa-database"></i><span>PostgreSQL / MySQL</span><em>80%</em></div>
+          <div class="bar"><i style="--w:80%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-solid fa-server"></i><span>REST APIs</span><em>82%</em></div>
+          <div class="bar"><i style="--w:82%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span><em>85%</em></div>
+          <div class="bar"><i style="--w:85%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-brands fa-docker"></i><span>Docker</span><em>65%</em></div>
+          <div class="bar"><i style="--w:65%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-brands fa-js"></i><span>JavaScript</span><em>75%</em></div>
+          <div class="bar"><i style="--w:75%"></i></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head"><i class="fa-brands fa-linux"></i><span>Linux / Bash</span><em>70%</em></div>
+          <div class="bar"><i style="--w:70%"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <div class="container reveal">
+      <p class="eyebrow">// Selected work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">A few things I've built while learning backend engineering.</p>
+
+      <div class="projects-grid">
+
+        <article class="project tilt">
+          <div class="project-thumb" style="--g:linear-gradient(135deg,#6366f1,#22d3ee)">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="project-body">
+            <h3>E-Commerce API</h3>
+            <p>Django REST backend with JWT auth, product catalog, cart, and Stripe checkout.</p>
+            <div class="tags"><span>Django</span><span>DRF</span><span>PostgreSQL</span><span>Stripe</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project tilt">
+          <div class="project-thumb" style="--g:linear-gradient(135deg,#f59e0b,#ef4444)">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <div class="project-body">
+            <h3>Task Manager</h3>
+            <p>Full-stack task app with team workspaces, real-time updates and role-based access.</p>
+            <div class="tags"><span>Django</span><span>WebSockets</span><span>Redis</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project tilt">
+          <div class="project-thumb" style="--g:linear-gradient(135deg,#10b981,#3b82f6)">
+            <i class="fa-solid fa-blog"></i>
+          </div>
+          <div class="project-body">
+            <h3>Blog Platform</h3>
+            <p>Markdown blog engine with tagging, search, and an admin dashboard.</p>
+            <div class="tags"><span>Python</span><span>Django</span><span>SQLite</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project tilt">
+          <div class="project-thumb" style="--g:linear-gradient(135deg,#a855f7,#ec4899)">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="project-body">
+            <h3>Telegram Bot</h3>
+            <p>Utility bot for reminders and notes, deployed with Docker on a VPS.</p>
+            <div class="tags"><span>Python</span><span>aiogram</span><span>Docker</span></div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="container reveal">
+      <p class="eyebrow">// Journey</p>
+      <h2 class="section-title">Resume</h2>
+      <p class="section-sub">Education, experience, and where I'm heading.</p>
+
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <span class="t-date">2024 — Present</span>
+            <h3>Software Development Student</h3>
+            <p>Studying software engineering with a focus on backend systems, databases, and clean architecture.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <span class="t-date">2025</span>
+            <h3>Backend Projects — Self-Taught</h3>
+            <p>Built REST APIs with Django & DRF, deployed with Docker, integrated third-party services.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <span class="t-date">2026</span>
+            <h3>Open to Internships</h3>
+            <p>Looking for a backend internship where I can contribute, learn from senior engineers, and ship real features.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="files/resume.pdf" download class="btn btn-primary">
+          <i class="fa-solid fa-download"></i> Download Full CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container reveal">
+      <p class="eyebrow">// Say hi</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">Got a project, question, or just want to chat? Send a message.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="name" required />
+          <label for="name">Your name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" required />
+          <label for="email">Email address</label>
+        </div>
+        <div class="field">
+          <input type="text" id="subject" required />
+          <label for="subject">Subject</label>
+        </div>
+        <div class="field">
+          <textarea id="message" rows="5" required></textarea>
+          <label for="message">Your message</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Thieng Vanntham. Built with HTML, CSS & JavaScript.</p>
+    </footer>
+  </section>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
